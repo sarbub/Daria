@@ -1,0 +1,86 @@
+
+  /* ----------------------------Main section */
+
+
+  .main{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main iframe{
+    margin-right: 100px;
+  }
+
+
+  /* ---------------------------about me section */
+
+  .info_about_me{
+    margin-top: 30px;
+    align-self: center;
+    width: 60%;
+    padding: 40px;
+  }
+
+  .info_about_me h1{
+    margin-bottom: 40px;
+  }
+
+  .info_about_me a{
+    text-decoration: none; /*makes link underline disappere*/
+    color: #770000;
+  }
+  
+
+  .info_about_me p{
+    font-size: 25px;
+  }
+
+  iframe{
+    width: 500px;
+    height: 500px;
+    align-self: center; /*align itself to the center*/
+    border-radius: 50%;
+    transition: border-radius 0.5s;
+  }
+
+  iframe:hover{
+    border-radius: 10px;
+  }
+
+
+
+  /* ----------------contact */
+
+  .contact_me{
+    flex: 1;
+    margin-top: 40px;
+  }
+
+  .contact_me span{
+    color: #1c1c1c;
+    font-weight: 600;
+  }
+
+
+  .contact_me h1{
+    margin-bottom: 40px;
+  }
+
+  .contact_me div{
+    display: flex; /*displays elements in a line, horizontally or vertically*/
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ----------------------responsive section */
+
+  @media screen and (max-width:1000px){
+    .main{
+      flex-direction: column;
+    }
+  }

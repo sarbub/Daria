@@ -1,0 +1,48 @@
+
+
+
+  /* ----------------------------Main section */
+
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  /* ---------------------------about me section */
+
+  .info_about_me{
+    margin-top: 30px;
+    align-self: center;
+    width: 60%;
+    padding: 40px;
+  }
+
+  .info_about_me h1{
+    margin-bottom: 40px;
+  }
+
+  .info_about_me a{
+    text-decoration: none;
+    color: #770000;
+  }
+  
+
+  .info_about_me p{
+    font-size: 25px;
+  }
+
+  iframe{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    border-radius: 50%;
+    transition: border-radius 0.5s;
+  }
+
+  iframe:hover{
+    border-radius: 10px;
+  }

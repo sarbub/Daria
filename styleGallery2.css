@@ -1,0 +1,35 @@
+
+  #Gallery2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+  }
+  
+  /*----------FIRUGRA*/
+  figure {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+  }
+  
+  /*----------IMG DIN FIG-------------*/
+  
+  figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px; /* Rotunjire colțuri pentru un aspect mai plăcut */
+  }
+
+  /* -----------------------------Responsive section */
+
+  @media screen and (max-width : 1000px){
+    .footer{
+      top:190px;
+    }
+  }
+  
+  
+  

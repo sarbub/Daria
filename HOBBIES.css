@@ -1,0 +1,29 @@
+
+/* -----------------------------Main section */
+
+.main{
+  display: flex;
+  height: 90vh;
+  padding: 40px;
+  gap: 10px;
+}
+
+.main i{
+  font-size: 300px;
+}
+
+/* Making video player  rounded corners */
+
+video{
+  border-radius: 20px;
+}
+
+
+/* responsive section */
+
+@media screen and (max-width:1000px){
+  .main{
+    flex-direction: column;
+    text-align: center;/*align items horizontally*/
+  }
+}
