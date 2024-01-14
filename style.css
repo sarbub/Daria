@@ -137,7 +137,8 @@ body{
 }
 #social_text_p{
   font-size: 20px;
-    color:var(--instagram);
+  color:var(--instagram);
+    fon-weight:300;
 }
 
 #fb{
