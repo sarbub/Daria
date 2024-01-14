@@ -11,38 +11,66 @@
     justify-content: center;
   }
 
+  :root{
+    --primary:#f1f1f1;
+    --purple:#6d15a3;
+    --black :#1c1c1c;
+    --second:#da9673;
+    --gray:#a6a6a6;
+  }
+
 
   /* ---------------------------about me section */
 
   .info_about_me{
+
     margin-top: 30px;
     align-self: center;
-    width: 60%;
-    padding: 40px;
+    width: 100%;
+    padding: 20px;
   }
 
   .info_about_me h1{
     margin-bottom: 40px;
+    color: var(--second);
   }
 
   .info_about_me a{
     text-decoration: none;
     color: #770000;
   }
-  
 
-  .info_about_me p{
-    font-size: 25px;
+  .map{
+    padding: 40px;
+    width: 100%;
   }
-
-  iframe{
-    width: 500px;
-    height: 500px;
-    align-self: center;
+  
+  .map iframe{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     transition: border-radius 0.5s;
   }
-
-  iframe:hover{
-    border-radius: 10px;
+  .map iframe:hover{
+    border-radius: 20px;
   }
+
+  .info_about_me p{
+    font-size: 20px;
+  }
+
+  @media screen and (min-width:800px){
+
+
+    .main{
+      height: 100vh;
+    }
+
+    .map iframe{
+      height: 500px;
+      width: 500px;
+    }
+
+
+  }
+
