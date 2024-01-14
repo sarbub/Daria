@@ -21,7 +21,8 @@ body{
   --black :#1c1c1c;
   --second:#da9673;
   --gray:#a6a6a6;
-    --facebook :#316FF6;
+  --facebook :#316FF6;
+--instagram:#dd2a7b;
 }
 .container-fluid{
   background-color:var(--primary);
@@ -136,6 +137,7 @@ body{
 }
 #social_text_p{
   font-size: 20px;
+    color:var(--instagram);
 }
 
 #fb{
