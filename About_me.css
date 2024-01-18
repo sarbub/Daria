@@ -40,23 +40,84 @@
     color: #770000;
   }
 
+  .location_logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .location_logo img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .mapping{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #mapping_hr{
+    border: 2px solid var(--second);
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    width: 80%;
+  }
+
+
   .map{
     padding: 40px;
     width: 100%;
   }
   
   .map iframe{
-    width: 300px;
+    min-width:80%;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 20px;
     transition: border-radius 0.5s;
   }
   .map iframe:hover{
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .info_about_me p{
     font-size: 20px;
+  }
+
+  .image_container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image_container img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .image_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 10px solid var(--second);
+    transition: transform 0.5s;
+  }
+  .image_container div:hover{
+    transform: translateY(-10px);
   }
 
   @media screen and (min-width:800px){
@@ -64,11 +125,37 @@
 
     .main{
       height: 100vh;
+      width: 100%;
+    }
+
+    .map{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     .map iframe{
       height: 500px;
       width: 500px;
+    }
+
+    .image_container img{
+      width: 400px;
+      height: 400px;
+    }
+    .image_container div{
+      width: 430px;
+      height: 430px;
+    }
+
+    .mapping{
+      flex-direction: row;
+    }
+
+    .location_logo img{
+      width: 400px;
+      height: 500px;
     }
 
 
