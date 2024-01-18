@@ -19,6 +19,13 @@
     --gray:#a6a6a6;
   }
 
+  #logo {
+    width: 50px; /* Adjust the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
   /* ---------------------------about me section */
 
@@ -69,11 +76,14 @@
     width: 80%;
   }
 
-
   .map{
-    padding: 40px;
     width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   
   .map iframe{
     min-width:80%;
