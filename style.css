@@ -82,6 +82,9 @@ i{
   transition: color 0.5s;
   color: var(--nav_gray);
 }
+.bottom_a_navigation{
+  margin-top: -10px;
+}
 
 .nav-item:hover a{
   color: var(--white);
