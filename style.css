@@ -10,13 +10,14 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: var(--primary);
+  background-color: var(--white);
   color:var(--black);
   position: relative;
 }
 
 :root{
   --primary:#f1f1f1;
+  --logo-white :#fff;
   --purple:#6d15a3;
   --black :#1c1c1c;
   --second:#da9673;
@@ -24,15 +25,86 @@ body{
   --facebook :#316FF6;
   --instagram:#dd2a7b;
   --footer:#9e5c22a1;
+  --white :#fff;
+  --nav_gray:#b8b7b7;
+  --try : #2c5f14;
 }
+
+
+i{
+  font-size: 25px;
+}
+
+
 .container-fluid{
-  background-color:var(--primary);
+  background-color:var(--white);
 }
 
 
 .navbar{
-  background:var(--primary);
+  background:var(--white);
 }
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 20px;
+  gap: 0px;
+  width: 120px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Adjust the margin as needed */
+}
+
+.nav-item i {
+  border-radius: 100px;
+  margin-bottom: -15px;
+  color: var(--nav_gray);
+  padding: 8px 20px;
+  transition: color 0.5s, background 0.5s;
+}
+
+.nav-item:hover {
+  background-color: var(--nav_gray);
+}
+
+.nav-item:hover i{
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav-item a{
+  transition: color 0.5s;
+  color: var(--nav_gray);
+}
+
+.nav-item:hover a{
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+#theme i{
+  color: var(--black);
+}
+
+#theme:hover i{
+  color: var(--white);
+  cursor: pointer;
+}
+
+#theme:hover a{
+  cursor: pointer;
+}
+
+
+
 
 
 
@@ -75,6 +147,7 @@ body{
 
 .right p{
   font-weight: 500;
+  color: var(--black);
 }
 
 .right p a{
@@ -90,6 +163,10 @@ body{
   flex-direction: column;
 }
 
+.footer p{
+  color: var(--white);
+}
+
 .footer .bottom{
   display: flex;
   align-items: center;
@@ -102,6 +179,10 @@ body{
   margin: auto;
   font-weight: 600;
   color: var(--second);
+}
+
+.bottom i{
+  font-size: 18px;
 }
 
 .elements{
@@ -136,6 +217,8 @@ body{
 }
 
 
+
+
 .elements .logo{
   display: flex;
   gap: 20px;
@@ -145,14 +228,23 @@ body{
   padding: 10px 40px;
 }
 
+.logo a{
+  transition: transform 0.5s;
+}
+
+.logo a:hover{
+  transform:translateY(-5px) ;
+}
+
 .elements a{
   font-size: 25px;
   text-decoration: none;
-  color: var(--primary);
+  color: var(--logo-white);
 }
 
 .elements p{
   font-weight: 600;
+  color: var(--logo-white);
 }
 
 .navigation_footer{
@@ -172,6 +264,15 @@ body{
   align-items: center;
 }
 
+.navigation a{
+  color: var(--logo-white);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover{
+  transform: translateY(-5px);
+}
+
 
 
 /* ------------------responsive------------------ */
@@ -180,6 +281,12 @@ body{
   .main{
     flex-direction: row;
   }
+
+  .nav-item{
+    padding: 0px 10px ;
+  }
+
+
 
   .left img{
     width: 70%;
