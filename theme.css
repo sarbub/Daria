@@ -54,10 +54,11 @@
 
 .switch{
   position: relative;
-  left: 30px;
-  width: 50px;
-  height:15px;
-  border: 3px solid #989898;
+  top: 30px;
+  left: 50px;
+  width: 25px;
+  height:5px;
+  border: 3px solid #b8b6b6;
   border-radius: 50px;
   cursor: pointer;
   background-color:#b8b6b6;
@@ -69,8 +70,8 @@
 
 .switch #inside_dot{
   background-color:#ac2525;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   position: relative;
   left: -20px;

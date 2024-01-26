@@ -1,5 +1,4 @@
-    
-    window.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("DOMContentLoaded", ()=>{
 
     //theme section variables
     var black_white_theme_button = document.getElementById("button_switch_theme");
@@ -68,5 +67,3 @@ window.onload = function(){
 
 
     })
-    
-

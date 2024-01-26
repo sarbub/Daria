@@ -157,7 +157,7 @@ window.addEventListener("DOMContentLoaded", () => {
     function custom_theme_switch_on_click_css_changes(element) {
         if (localStorage_track_custom_theme_click === '1') {
             element.style.background = "#0e61a0";
-            element.style.transform = "translateX(50px)";
+            element.style.transform = "translateX(40px)";
         } else {
             element.style.background = "#ac2525";
             element.style.transform = "translateX(0px)";
