@@ -139,7 +139,7 @@ window.addEventListener("DOMContentLoaded", () => {
         document.documentElement.style.setProperty('--second', localStorage.getItem("second"));
         document.documentElement.style.setProperty('--footer', localStorage.getItem("footer"));
         document.documentElement.style.setProperty('--gray', localStorage.getItem("gray"));
-        document.documentElement.style.setProperty('--logo_white', localStorage.getItem("logo_white"));
+        document.documentElement.style.setProperty('--logo-white', localStorage.getItem("logo_white"));
     
         // Set picker values from localStorage
         white_picker_color.value = localStorage.getItem("white");

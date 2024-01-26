@@ -42,7 +42,7 @@ function check_switch(){
                 document.documentElement.style.setProperty('--second', localStorage.getItem("second"));
                 document.documentElement.style.setProperty('--footer', localStorage.getItem("footer"));
                 document.documentElement.style.setProperty('--gray', localStorage.getItem("gray"));
-                document.documentElement.style.setProperty('--logo_white', localStorage.getItem("logo_white"));
+                document.documentElement.style.setProperty('--logo-white', localStorage.getItem("logo_white"));
 
     }else{
         black_theme_change_function();
