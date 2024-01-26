@@ -16,18 +16,14 @@ body{
 }
 
 :root{
-  --primary:#f1f1f1;
-  --logo-white :#fff;
-  --purple:#6d15a3;
-  --black :#1c1c1c;
-  --second:#da9673;
-  --gray:#a6a6a6;
+  --logo-white :#fff; /* this is for the footer text*/
+  --black :#1c1c1c; /*text color in the body*/
+  --second:#da9673; /*this is the footer*/
+  --gray:#a6a6a6; /*this are the navigation elements at the top*/
+  --footer:#9e5c22a1; /*this is for the footer*/
+  --white :#fff;
   --facebook :#316FF6;
   --instagram:#dd2a7b;
-  --footer:#9e5c22a1;
-  --white :#fff;
-  --nav_gray:#b8b7b7;
-  --try : #2c5f14;
 }
 
 
@@ -64,13 +60,13 @@ i{
 .nav-item i {
   border-radius: 100px;
   margin-bottom: -15px;
-  color: var(--nav_gray);
+  color: var(--gray);
   padding: 8px 20px;
   transition: color 0.5s, background 0.5s;
 }
 
 .nav-item:hover {
-  background-color: var(--nav_gray);
+  background-color: var(--gray);
 }
 
 .nav-item:hover i{
@@ -80,7 +76,7 @@ i{
 
 .nav-item a{
   transition: color 0.5s;
-  color: var(--nav_gray);
+  color: var(--gray);
 }
 .bottom_a_navigation{
   margin-top: -10px;
@@ -104,6 +100,12 @@ i{
 
 #theme:hover a{
   cursor: pointer;
+}
+
+.nav_button{
+  border:none;
+  background-color: transparent;
+
 }
 
 
@@ -145,7 +147,7 @@ i{
 }
 
 .right h1{
-  color: var(--second);
+  color: var(--footer);
 }
 
 .right p{
@@ -155,7 +157,7 @@ i{
 
 .right p a{
   text-decoration: none;
-  color: var(--second);
+  color: var(--footer);
 }
 
 
@@ -181,7 +183,7 @@ i{
 .bottom p{
   margin: auto;
   font-weight: 600;
-  color: var(--second);
+  color: var(--footer);
 }
 
 .bottom i{
@@ -193,7 +195,7 @@ i{
   flex-direction: column;
   text-align: center;
   background-color: var(--footer);
-  color: var(--primary);
+  color: var(--white);
 }
 .elements .text{
   min-height: 100%;

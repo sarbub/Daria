@@ -1,0 +1,95 @@
+
+
+.input-color-container {
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: solid 2px #ddd;
+    border-radius: 10px;
+}
+
+.input-color {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 56px;
+    height: 56px;
+    border: none;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.color{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    color: var(--black);
+    border-radius: 10px;
+    background-color: var(--nav_gray);
+    padding: 10px;
+    width: 250px;
+    transition:transform 0.5s;
+}
+
+.color input:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+
+.color p{
+    margin: auto;
+    padding: 10px;
+}
+
+/* switches */
+
+.switch{
+  position: relative;
+  left: 30px;
+  width: 50px;
+  height:15px;
+  border: 3px solid #989898;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color:#b8b6b6;
+  display: flex;
+  align-items: center;
+  border: 2px solid 989898;
+  
+}
+
+.switch #inside_dot{
+  background-color:#ac2525;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  left: -20px;
+}
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .btn_theme{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--gray);
+    border:2px solid var(--gray);
+
+  }

@@ -1,44 +1,72 @@
-let localStorage_clickElement = localStorage.getItem("clicked");
+    
+    window.addEventListener("DOMContentLoaded", ()=>{
 
-// If the theme is not set in localStorage, use a default value (e.g., light theme)
-if (localStorage_clickElement === null) {
-    localStorage_clickElement = '0'; // Default to light theme
+    //theme section variables
+    var black_white_theme_button = document.getElementById("button_switch_theme");
+    let localStorage_track_theme_click = localStorage.getItem("theme_click_tracker") || '0';
+
+    var switch_variable_tracker = localStorage.getItem("custom_theme_click_tracker");
+    console.log(switch_variable_tracker);
+
+function black_theme_change_function() {
+    const isDarkTheme = localStorage_track_theme_click === '1';
+    document.documentElement.style.setProperty('--white', isDarkTheme ? '#1c1c1c' : '#fff');
+    document.documentElement.style.setProperty('--second', isDarkTheme ? '#bd362f' : '#da9673');
+    document.documentElement.style.setProperty('--footer', isDarkTheme ? '#2c5f14' : '#9e5c22a1');
+    document.documentElement.style.setProperty('--black', isDarkTheme ? '#fff' : '#1c1c1c');
+    document.documentElement.style.setProperty('--gray', isDarkTheme ? '#fff' : '#a6a6a6');
+    document.documentElement.style.setProperty('--logo-white', isDarkTheme ? '#1c1c1c' : '#fff'); // Include logo-white color
 }
 
-const rootStyles = getComputedStyle(document.documentElement);
-
-window.onload = function () {
-    changing_elements(); 
-}
-
-
-if (localStorage_clickElement === '1') {
-    changing_elements();
-}
-
-function theme_function() {
-    if (localStorage_clickElement === '1') {
-        localStorage_clickElement = '0';
-    } else {
-        localStorage_clickElement = '1';
+function check_if_localStorage_elements_exist() {
+    console.log("this is the local switch button");
+    if (localStorage_track_theme_click === null) {
+        localStorage_track_theme_click = "0";
     }
-    changing_elements();
-    localStorage.setItem('clicked', localStorage_clickElement);
 }
 
-function changing_elements() {
-    document.documentElement.style.setProperty('--white', localStorage_clickElement === '1' ? '#1c1c1c' : '#fff');
-    document.documentElement.style.setProperty('--second', localStorage_clickElement === '1' ? '#bd362f' : '#da9673');
-    document.documentElement.style.setProperty('--footer', localStorage_clickElement === '1' ? '#2c5f14' : '#9e5c22a1');
-    document.documentElement.style.setProperty('--black', localStorage_clickElement === '1' ? '#fff' : '#1c1c1c');
-    document.documentElement.style.setProperty('--nav_gray', localStorage_clickElement === '1' ? '#fff' : '#b8b7b7');
+
+
+function change_tracker_click_value() {
+    localStorage_track_theme_click = localStorage_track_theme_click === '0' ? '1' : '0';
+    localStorage.setItem("theme_click_tracker", localStorage_track_theme_click);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const theme = document.getElementById("theme");
-    if (theme) {
-        theme.addEventListener("click", theme_function);
-    } else {
-        console.error("Element with ID 'theme' not found");
+function check_switch(){
+    if(switch_variable_tracker === '1'){
+        console.log("this is the 1");
+        black_white_theme_button.disabled = true;
+                // Set root colors from localStorage
+
+                document.documentElement.style.setProperty('--black', localStorage.getItem("black"));
+                document.documentElement.style.setProperty('--white', localStorage.getItem("white"));
+                document.documentElement.style.setProperty('--second', localStorage.getItem("second"));
+                document.documentElement.style.setProperty('--footer', localStorage.getItem("footer"));
+                document.documentElement.style.setProperty('--gray', localStorage.getItem("gray"));
+                document.documentElement.style.setProperty('--logo_white', localStorage.getItem("logo_white"));
+
+    }else{
+        black_theme_change_function();
     }
-});
+}
+
+
+
+function main_black_white_theme_function() {
+    change_tracker_click_value(localStorage_track_theme_click);
+    check_if_localStorage_elements_exist();
+    black_theme_change_function();
+}
+
+
+
+black_white_theme_button.addEventListener("click", main_black_white_theme_function);
+
+window.onload = function(){
+    check_switch();
+}
+
+
+    })
+    
+

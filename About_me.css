@@ -11,13 +11,6 @@
     justify-content: center;
   }
 
-  :root{
-    --primary:#f1f1f1;
-    --purple:#6d15a3;
-    --black :#1c1c1c;
-    --second:#da9673;
-    --gray:#a6a6a6;
-  }
 
   #logo {
     width: 50px; /* Adjust the width of the logo */
@@ -39,7 +32,8 @@
 
   .info_about_me h1{
     margin-bottom: 40px;
-    color: var(--second);
+    color: var(--footer
+    );
   }
 
   .info_about_me a{
@@ -68,7 +62,7 @@
   }
 
   #mapping_hr{
-    border: 2px solid var(--second);
+    border: 2px solid var(--footer);
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -123,7 +117,7 @@
     width: 330px;
     height: 330px;
     border-radius: 50%;
-    border: 10px solid var(--second);
+    border: 10px solid var(--footer);
     transition: transform 0.5s;
   }
   .image_container div:hover{

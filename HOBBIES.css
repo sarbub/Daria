@@ -8,18 +8,11 @@
   gap: 10px;
 }
 
-:root{
-  --primary:#f1f1f1;
-  --purple:#6d15a3;
-  --black :#1c1c1c;
-  --second:#da9673;
-  --gray:#a6a6a6;
-}
 
 .main i{
   font-size: 150px;
   margin-bottom: 40px;
-  color: var(--second);
+  color: var(--footer);
 }
 
 .video_section{
